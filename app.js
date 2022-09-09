@@ -11,9 +11,10 @@ app.set('view engine', 'ejs');
 
 // membuat route /
 app.get('/', (req, res) => {
-  // memanggil file html
+  // merender file index.html dengan membawa data title dan nama
   res.render('index', {
-    nama: 'Iwan Plamboyan',
+    title: 'WebServer EJS',
+    name: 'Iwan Plamboyan',
   });
 });
 
